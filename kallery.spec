@@ -34,18 +34,18 @@ the most important features are:
   gallery later with the same or different settings.
 
 %description -l pl
-Kallery jest latwym w uzyciu generatorem galerii grafik z podobnym do
-czarodziei interfjesem. Mozna nim robic ladnie wygladajace gotowe do
-publikacji strony www z zapisanych plikow graficznych. Niektore z
-najwazniejszych mozliwosci:
-- obsluguje wiele formatow plikow graficznych poprzez ImageMagick
+Kallery jest ³atwym w u¼yciu generatorem galerii grafik z podobnym do
+czarodziei interfjesem. Mo¿na nim robiæ ³adnie wygladaj±ce gotowe do
+publikacji strony www z zapisanych plików graficznych. Niektóre z
+najwa¿niejszych mo¿liwosci:
+- obs³uguje wiele formatow plików graficznych poprzez ImageMagick
 - automatycznie generuje miniatury grafik
-- konwertuje pliki z roznych formatow
-- mozliwe jest dodanie opisow do obrazkow
-- sposob generacji galerii w HTML jest wysoce konfigurowalny
-- uzywa wzorcow do genracji HTML
-- pozwala na zapis oraz odczyt plikow projektow aby generowac
-  wielokrotnie z zmienionymi badz nie ustawieniami.
+- konwertuje pliki z ró¿nych formatow
+- mo¿liwe jest dodanie opisow do obrazkow
+- sposób generacji galerii w HTML jest wysoce konfigurowalny
+- u¿ywa szablonów do genrowania galleri
+- pozwala na zapis oraz odczyt plików projektów aby generowac
+  wielokrotnie z zmienionymi bad¿ nie ustawieniami.
 
 %prep
 #setup -q -n %{name}
