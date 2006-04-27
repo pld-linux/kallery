@@ -1,13 +1,11 @@
-# TODO: fix pl
 # TODO: fix applnk/Applications/kallery.desktop hack
-######		Unknown group!
 Summary:	Image gallery generator program for KDE
-Summary(pl):	Generator galerii plikow graficznych dla KDE
+Summary(pl):	Generator galerii plików graficznych dla KDE
 Name:		kallery
 Version:	1.0.7a
 Release:	1
 License:	GPL
-Group:		Graphics
+Group:		X11/Applications/Graphics
 Source0:	http://kallery.kdewebdev.org/releases/%{name}-%{version}.tar.bz2
 # Source0-md5:	7378740aaeac45062b35e33c07e329b1
 URL:		http://kallery.kdewebdev.org/index.php
@@ -34,21 +32,20 @@ the most important features are:
   gallery later with the same or different settings.
 
 %description -l pl
-Kallery jest ³atwym w u¼yciu generatorem galerii grafik z podobnym do
-czarodziei interfjesem. Mo¿na nim robiæ ³adnie wygladaj±ce gotowe do
-publikacji strony www z zapisanych plików graficznych. Niektóre z
-najwa¿niejszych mo¿liwosci:
-- obs³uguje wiele formatow plików graficznych poprzez ImageMagick
+Kallery jest ³atwym w u¿yciu generatorem galerii grafik z podobnym do
+czarodziei interfejsem. Mo¿na nim robiæ ³adnie wygl±daj±ce gotowe do
+publikacji strony WWW z zapisanych plików graficznych. Niektóre z
+najwa¿niejszych mo¿liwo¶ci:
+- obs³uguje wiele formatów plików graficznych poprzez ImageMagick
 - automatycznie generuje miniatury grafik
-- konwertuje pliki z ró¿nych formatow
-- mo¿liwe jest dodanie opisow do obrazkow
-- sposób generacji galerii w HTML jest wysoce konfigurowalny
-- u¿ywa szablonów do genrowania galleri
-- pozwala na zapis oraz odczyt plików projektów aby generowac
-  wielokrotnie z zmienionymi bad¿ nie ustawieniami.
+- konwertuje pliki z ró¿nych formatów
+- mo¿liwe jest dodanie opisów do obrazków
+- sposób generowania galerii w HTML-u jest wysoce konfigurowalny
+- u¿ywa szablonów do generowania galerii
+- pozwala na zapis oraz odczyt plików projektów aby generowaæ
+  wielokrotnie z zmienionymi b±d¼ nie ustawieniami.
 
 %prep
-#setup -q -n %{name}
 %setup -q
 
 %build
@@ -74,7 +71,7 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 	kde_libs_htmldir=%{_kdedocdir} \
 	kdelnkdir=%{_desktopdir}
 
-mv $RPM_BUILD_ROOT%{_datadir}/applnk/Applications/kallery.desktop $RPM_BUILD_ROOT/%{_desktopdir}
+mv $RPM_BUILD_ROOT%{_datadir}/applnk/Applications/kallery.desktop $RPM_BUILD_ROOT%{_desktopdir}
 %find_lang %{name} --with-kde
 
 %clean
@@ -83,7 +80,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-#%{_pixmapsdir}/*
 %{_desktopdir}/*
 %{_iconsdir}/*/*/apps/%{name}.png
 #%{_datadir}/mimelnk/application/*
