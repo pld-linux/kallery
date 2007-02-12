@@ -1,6 +1,6 @@
 # TODO: fix applnk/Applications/kallery.desktop hack
 Summary:	Image gallery generator program for KDE
-Summary(pl):	Generator galerii plików graficznych dla KDE
+Summary(pl.UTF-8):   Generator galerii plikÃ³w graficznych dla KDE
 Name:		kallery
 Version:	1.2.0
 Release:	1
@@ -31,19 +31,19 @@ the most important features are:
 - save and load of the project files, so you can regenerate the
   gallery later with the same or different settings.
 
-%description -l pl
-Kallery jest ³atwym w u¿yciu generatorem galerii grafik z podobnym do
-czarodziei interfejsem. Mo¿na nim robiæ ³adnie wygl±daj±ce gotowe do
-publikacji strony WWW z zapisanych plików graficznych. Niektóre z
-najwa¿niejszych mo¿liwo¶ci:
-- obs³uguje wiele formatów plików graficznych poprzez ImageMagick
+%description -l pl.UTF-8
+Kallery jest Å‚atwym w uÅ¼yciu generatorem galerii grafik z podobnym do
+czarodziei interfejsem. MoÅ¼na nim robiÄ‡ Å‚adnie wyglÄ…dajÄ…ce gotowe do
+publikacji strony WWW z zapisanych plikÃ³w graficznych. NiektÃ³re z
+najwaÅ¼niejszych moÅ¼liwoÅ›ci:
+- obsÅ‚uguje wiele formatÃ³w plikÃ³w graficznych poprzez ImageMagick
 - automatycznie generuje miniatury grafik
-- konwertuje pliki z ró¿nych formatów
-- mo¿liwe jest dodanie opisów do obrazków
-- sposób generowania galerii w HTML-u jest wysoce konfigurowalny
-- u¿ywa szablonów do generowania galerii
-- pozwala na zapis oraz odczyt plików projektów aby generowaæ
-  wielokrotnie z zmienionymi b±d¼ nie ustawieniami.
+- konwertuje pliki z rÃ³Å¼nych formatÃ³w
+- moÅ¼liwe jest dodanie opisÃ³w do obrazkÃ³w
+- sposÃ³b generowania galerii w HTML-u jest wysoce konfigurowalny
+- uÅ¼ywa szablonÃ³w do generowania galerii
+- pozwala na zapis oraz odczyt plikÃ³w projektÃ³w aby generowaÄ‡
+  wielokrotnie z zmienionymi bÄ…dÅº nie ustawieniami.
 
 %prep
 %setup -q
