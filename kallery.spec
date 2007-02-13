@@ -1,6 +1,6 @@
 # TODO: fix applnk/Applications/kallery.desktop hack
 Summary:	Image gallery generator program for KDE
-Summary(pl.UTF-8):   Generator galerii plików graficznych dla KDE
+Summary(pl.UTF-8):	Generator galerii plików graficznych dla KDE
 Name:		kallery
 Version:	1.2.0
 Release:	1
