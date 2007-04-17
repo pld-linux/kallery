@@ -1,4 +1,8 @@
-# TODO: fix applnk/Applications/kallery.desktop hack
+# TODO:
+# - fix applnk/Applications/kallery.desktop hack
+# - warning: not very smart program, leaves /tmp files around and segfaults
+#   when it fills up the disk by itself and also eats 2+ GB memory when it
+#   encounters 114MB avi
 Summary:	Image gallery generator program for KDE
 Summary(pl.UTF-8):	Generator galerii plików graficznych dla KDE
 Name:		kallery
