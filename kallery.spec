@@ -7,18 +7,18 @@ Summary:	Image gallery generator program for KDE
 Summary(pl.UTF-8):	Generator galerii plików graficznych dla KDE
 Name:		kallery
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://kallery.kdewebdev.org/releases/%{name}-%{version}.tar.bz2
 # Source0-md5:	5318e3b8d4e04e1ea9f9a53e5a565d9c
-URL:		http://kallery.kdewebdev.org/index.php
+Patch0:		%{name}-desktop.patch
+URL:		http://kallery.kdewebdev.org/
 BuildRequires:	ImageMagick-devel >= 6.1.0
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	rpmbuild(macros) >= 1.129
-#BuildRequires:	unsermake >= 040805
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -51,10 +51,10 @@ najważniejszych możliwości:
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
-#export PATH=/usr/share/unsermake:$PATH
 %{__make} -f admin/Makefile.common cvs
 
 %configure \
@@ -85,5 +85,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/kde/*.desktop
 %{_iconsdir}/*/*/apps/%{name}.png
-#%{_datadir}/mimelnk/application/*
 %{_datadir}/apps/%{name}
