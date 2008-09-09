@@ -1,5 +1,4 @@
 # TODO:
-# - fix applnk/Applications/kallery.desktop hack
 # - warning: not very smart program, leaves /tmp files around and segfaults
 #   when it fills up the disk by itself and also eats 2+ GB memory when it
 #   encounters 114MB avi
