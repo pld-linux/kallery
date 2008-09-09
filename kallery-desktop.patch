@@ -1,0 +1,15 @@
+--- kallery-1.2.0/kallery/kallery.desktop~	2006-11-16 11:01:56.000000000 +0200
++++ kallery-1.2.0/kallery/kallery.desktop	2008-09-09 09:49:23.987314835 +0300
+@@ -7,8 +7,9 @@
+ DocPath=kallery/index.html
+ Comment=
+ Comment[de]=
+-Terminal=0
++Terminal=false
+ Name=Kallery
+ GenericName=Image Gallery Generator
++GenericName[pl]=Generator galerii obrazów
+ Name[de]=Kallery
+-Categories=Qt;KDE;Graphics
+\ No newline at end of file
++Categories=Qt;KDE;Graphics;
