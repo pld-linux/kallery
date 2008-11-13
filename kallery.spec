@@ -6,7 +6,7 @@ Summary:	Image gallery generator program for KDE
 Summary(pl.UTF-8):	Generator galerii plików graficznych dla KDE
 Name:		kallery
 Version:	1.2.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://kallery.kdewebdev.org/releases/%{name}-%{version}.tar.bz2
@@ -77,6 +77,8 @@ install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir}}
 	kdelnkdir=%{_desktopdir}
 
 %find_lang %{name} --with-kde
+
+rm -rf $RPM_BUILD_ROOT%{_iconsdir}/locolor
 
 %clean
 rm -rf $RPM_BUILD_ROOT
