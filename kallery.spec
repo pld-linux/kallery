@@ -6,7 +6,7 @@ Summary:	Image gallery generator program for KDE
 Summary(pl.UTF-8):	Generator galerii plików graficznych dla KDE
 Name:		kallery
 Version:	1.2.0
-Release:	6
+Release:	7
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://kallery.kdewebdev.org/releases/%{name}-%{version}.tar.bz2
